@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "355911754163",
+    "firebase_url": "https://eatitapps.firebaseio.com",
+    "project_id": "eatitapps",
+    "storage_bucket": "eatitapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355911754163:android:a696664ad4d4f60d",
+        "android_client_info": {
+          "package_name": "com.dev.dan.eatitapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355911754163-ghgl8he1s7e44e7d409ipoqvrr95b5ri.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.dan.eatitapps",
+            "certificate_hash": "16e3b26b8463203abb31431ecda6a265d694cf12"
+          }
+        },
+        {
+          "client_id": "355911754163-82khtfcn0ljeo99uglnuq5ln4kjfk6hu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC86ej2J6_VUuVjQuVTEGgJg0DK4EdjARQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355911754163-82khtfcn0ljeo99uglnuq5ln4kjfk6hu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

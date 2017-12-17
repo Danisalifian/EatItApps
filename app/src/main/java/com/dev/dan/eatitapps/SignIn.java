@@ -1,6 +1,7 @@
 package com.dev.dan.eatitapps;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.dev.dan.eatitapps.Common.Common;
 import com.dev.dan.eatitapps.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -53,7 +55,11 @@ public class SignIn extends AppCompatActivity {
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals(edtPassword.getText().toString()))
                             {
-                                Toast.makeText(SignIn.this, "Sign in successfully !", Toast.LENGTH_SHORT).show();
+                                //Toast.makeText(SignIn.this, "Sign in successfully !", Toast.LENGTH_SHORT).show();
+                                Intent homeIntent = new Intent(SignIn.this,Home.class);
+                                Common.currentUser = user;
+                                startActivity(homeIntent);
+                                finish();
                             }
                             else
                             {
